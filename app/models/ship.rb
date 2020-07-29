@@ -2,16 +2,22 @@ class Ship
   
   attr_accessor :name, :type, :booty
   
-  SHIPS = []
+  @@ships = []
   
   def self.all
-    @@all
+    @@ships
   end
+  
+  def self.clear
+    @@ships = []
+  end 
   
   def initialize(args)
     @name = args[:name]
     @type = args[:type]
     @booty = args[:booty]
-    SHIPS << self
+    @@ships << self
   end
+  
+  
 end
