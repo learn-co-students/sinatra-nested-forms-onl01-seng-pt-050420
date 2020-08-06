@@ -1,13 +1,17 @@
 class Ship
-  attr_reader :name, :weight, :height
+  attr_reader :name, :type, :booty
   @@all = []
 
-  def initialize(name, weight, height)
-    @name, @weight, @height = name, weight, height
+  def initialize(params)
+    @name, @type, @booty = params[:name], params[:type], params[:booty]
     @@all << self
   end
 
   def self.all
     @@all
+  end
+
+  def self.clear
+    @@all.clear
   end
 end
