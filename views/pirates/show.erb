@@ -1,7 +1,15 @@
-<h1>Display your Pirate here</h1>
+    <h2>Pirates</h2>
+        <ul>
+            <li>Name: <%= @pirates.name %></li>
+            <li>Height: <%= @pirates.height %></li>
+            <li>Weight: <%= @pirates.weight %></li>
+        </ul>
 
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+    <h2>Ships</h2>
+        <ul>
+            <% @ships.each do |ship| %>
+                <li>Name: <%= ship.name %> </li>
+                <li>type: <%= ship.type %> </li>
+                <li>Booty: <%= ship.booty %> </li>
+            <% end %>
+        </ul>
