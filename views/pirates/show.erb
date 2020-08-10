@@ -7,19 +7,19 @@
  
 
 <h1>Ship 1</h1>
-<% @ship.each do |detail| %>
+<% @ships.each do |detail| %>
   <div class="ship">
-    <p>Ship Name: <%= @ship.name %></p><br>
-    <p>Ship Type: <%= @ship.type %></p><br>
-    <p>Ship Booty: <%= @ship.booty %></p><br>
+    <p>Ship Name: <%= detail.name %></p><br>
+    <p>Ship Type: <%= detail.type %></p><br>
+    <p>Ship Booty: <%= detail.booty %></p><br>
   </div><br>
 <% end %>
 
 <h1>Ship 2</h1>
-<% @ship.each do |detail| %>
+<% @ships.each do |detail| %>
   <div class="ship">
-    <p>Ship Name: <%= @ship.name %></p><br>
-    <p>Ship Type: <%= @ship.type %></p><br>
-    <p>Ship Booty: <%= @ship.booty %></p><br>
+    <p>Ship Name: <%= detail.name %></p><br>
+    <p>Ship Type: <%= detail.type %></p><br>
+    <p>Ship Booty: <%= detail.booty %></p><br>
   </div><br>
 <% end %>
